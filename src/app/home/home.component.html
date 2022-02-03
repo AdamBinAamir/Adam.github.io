@@ -1,0 +1,85 @@
+<div class="page">
+<section>
+  <!-- Carousel -->
+  <div id="carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" >  
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+    </div>    
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img style="width:100%" src="../../assets/Images/slider.jpg" alt="img1">
+        <div class="carousel-caption">
+          <h1>Online Quran Classes <br> For Kids & Adults</h1>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img style="width:100%; " src="../../assets/Images/sliders.jpg" alt="img2">
+        <div class="carousel-caption">
+          <h1>Online Quran Classes <br> For Kids & Adults</h1>
+        </div> 
+      </div>
+      <div class="carousel-item">
+        <img style="width:100%; " src="../../assets/Images/sliderss.jpg" alt="img3">
+        <div class="carousel-caption">
+          <h1>Online Quran Classes <br> For Kids & Adults</h1>
+        </div>  
+      </div>
+    </div>
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>  
+</section>
+
+<section id="bg">
+  <div class="container" style="text-align: center; padding-top: 50px; padding-bottom: 50px; color: white;" *ngFor='let a of about'>
+    <p id="heading" style="padding-bottom: 10px;">{{a.heading}}</p>
+    <p style="font-size: larger; color: gray;">{{a.para}}</p><br>
+    <a href="#forms" class="btn btn-success" role="button">Get a Free Trial of<br>Online Quran Class</a>
+    <p id="heading" style="margin-top: 90px; margin-bottom: 80px;">Our Services</p>
+    <div class="row">
+      <div class="col-md-6 mb-4" *ngFor='let s of services'>
+        <h4 [style.color]="s.color" [style.margin-bottom]="s.mgb">{{s.heading}}</h4><hr>
+        <p [style.color]="s.pb">{{s.para}}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="forms">
+  <div class="container">
+    <div class="col-md-5">
+    <p id="heading" style=" color: white;">2 Free Trial <br> Online Classes</p><br><br>
+        <form class="form-horizontal" method="post" action="mailto:qurainn@gmail.com?subject=Query for Trial Quran Classes" enctype="text/plain">
+          <div class="form-group form-group-lg">
+            <input type="text" class="form-control" id="First Name " placeholder="First Name" name="First Name " required>
+            <input type="text" class="form-control mb-3 mt-3" id="Last Name " placeholder="Last Name" name="Last Name " required>
+            <input class="form-control mb-3 mt-3" list="genders" name="Gender " id="Gender " placeholder="Gender">
+            <datalist id="genders">
+              <option value="Male">
+              <option value="Female">
+              <option value="Other">
+            </datalist>
+            <input type="number" class="form-control" id="Age " placeholder="Age" name="Age " required>
+            <input class="form-control mb-3 mt-3" list="Courses" name="Course " id="Course " placeholder="Course">
+            <datalist id="Courses">
+              <option value="Basic Quran Reading/Recitation">
+              <option value="Quran Memorization">
+              <option value="Hadith Classes">
+            </datalist>
+            <input type="tel" class="form-control mb-3 mt-3" id="Phone/Whatsapp " placeholder="Phone/Whatsapp" name="Phone/Whatsapp " required>
+            <input type="email" class="form-control" id="Email " placeholder="Email" name="Email " required>
+            <br><input class="btn btn-warning btn-lg float-end" type="submit" value="Submit">
+          </div>
+        </form>
+  </div>
+</div>
+</section>

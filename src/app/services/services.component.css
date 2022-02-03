@@ -1,0 +1,32 @@
+#heading {
+    font-size: 50px;
+    color: goldenrod;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 80px;
+    
+  }
+  hr{
+   color: gray;
+   height: 2px;
+   opacity: 0.8;
+}
+.row{
+   padding-bottom: 50px;
+}
+ #service1 {
+    color: lightsalmon;
+ }
+ #service2 {
+    color: lightgreen;
+ }
+ #service3 {
+    color: lightblue;
+ }
+ #service4 {
+    color: lemonchiffon;
+ }
+#bgserv{
+  background-image: url('../../assets/Images/bgserve.jpeg'); 
+  background-position: center;
+}
